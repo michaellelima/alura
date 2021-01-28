@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+         function pularLinha(){
+            document.write("<br><br>")
+        }
+
+        function mostra(frase){
+            document.write(frase);
+            pularLinha();
+        }
+
+        let contador = 20;
+
+        while(contador >= 0){
+            mostra(contador);
+            contador -= 1;
+        }
+    </script>
+</body>
+</html>

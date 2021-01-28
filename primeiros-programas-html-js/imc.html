@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        function pularLinha(){
+
+            document.write("<br><br>");
+        }
+        function mostra(frase) {
+            
+            document.write(frase);
+            pularLinha();
+        }
+
+        function calculaImc(altura,peso){
+             
+            return peso /(altura * altura );
+        }
+
+        let nome = prompt("Informe sua nome:")
+        let altura = prompt(nome + ", informe sua altura:");
+        let peso = prompt(nome + ", agora informe seu peso:");
+
+        let imc = calculaImc(altura, peso);
+
+
+       mostra(nome + ", seu imc é " + imc);
+       
+       if(imc < 18.5 ){
+           mostra("Seu imc está abaixo da média");
+       }
+
+       else if(imc >= 35){
+            mostra("Seu imc está acima da média, cuidado!");
+       }
+
+       else {
+           mostra("Seu imc está balanceado :)");
+       }
+
+    </script>
+</body>
+</html>

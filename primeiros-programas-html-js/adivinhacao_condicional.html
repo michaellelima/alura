@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adivinhaçao</title>
+</head>
+<body>
+    <script>
+          //funções para pular linha e retorna ao usuario
+
+          function pularLinha(){
+
+            document.write("<br><br>");
+        }
+
+          function mostra(frase) {
+
+            document.write(frase)
+            pularLinha()
+        }
+
+        let numeroPensado =  Math.round(Math.random() * 10);
+
+        let tentativas = 3;
+
+        while(tentativas <=3){
+
+            let chute = parseInt(prompt("Digite seu chute"))
+            
+            if(chute == numeroPensado){
+                mostra("Voce acertou");
+                break;
+            }
+            
+            else {
+                mostra("voce errou!");
+            }
+
+            tentativas++;
+        }
+
+        mostra("fim");
+    </script>
+</body>
+</html>

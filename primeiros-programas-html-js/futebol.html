@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        function pulaLinha(){
+            document.write("<br<br");
+        }
+
+        function mostra(frase){
+            document.write(frase);
+            pulaLinha();
+        }
+        
+        let vitorias = parseInt(prompt('Informe o número de vitórias: '));
+        let empates = parseInt(prompt('Agora informe o número de empates'))
+
+        let pontos = vitorias * 3 + empates;
+
+        mostra('Os pontos do seu time são: ' + pontos);
+    </script>
+</body>
+</html>

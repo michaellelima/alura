@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+
+            //funções para pular linha e retorna ao usuario
+
+            function pularLinha(){
+
+                document.write("<br><br>");
+            }
+
+            function mostra(frase) {
+                
+                document.write(frase);
+                pularLinha();
+            }
+
+            //funcao de sorteio dos numeros
+
+        function sorteia(n){
+                return Math.round(Math.random() * n);
+        }
+
+        //declaracao das variaveis 
+
+        let chute = parseInt(prompt("Tente adivinhar o número que estou pensando ... \n Já pensei. Qual você acha que é?"))
+        let numeroPensado = sorteia(20);
+
+        //condcionais 
+
+        if(chute == numeroPensado){
+            mostra("Caraca, era esse número mesmo que eu tinha pensado! 'o'")
+        }
+
+        else{
+            mostra("Não foi dessa vez que acertaste!")
+        }
+        
+        </script>
+    </body>
+</html>
